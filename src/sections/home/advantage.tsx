@@ -3,6 +3,8 @@ import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import advantageBg from "../../assets/home/advantageBg.png";
 import CustomTitle from "@/components/cutom-title";
 import CustomCard from "@/components/custom-card";
+import CustomHeading from "@/components/custom-heading";
+import CustomButton from "@/components/custom-button";
 
 const cardArray = [
   {
@@ -25,6 +27,9 @@ const Advantage = () => {
     <Box sx={style.advantageBackground}>
       <Container maxWidth="xl">
         <Box sx={{ padding: { xs: "30px 0", md: "200px 0" } }}>
+          <Box sx={{ my: 5, display: "flex", justifyContent: "center" }}>
+            <CustomHeading label="Kids Deserve Better CHARITY" />
+          </Box>
           <Box
             sx={{
               display: "flex",
@@ -33,27 +38,17 @@ const Advantage = () => {
             }}
           >
             <CustomTitle
-              primaryText="THE LEGAL"
-              secondaryText="HEIP SQUARD"
-              tertiaryText="ADVANTAGE"
+              primaryText="The Smallest Act of Kindness is"
+              secondaryText=" Worth More Than"
+              tertiaryText=" the Grandest Intention"
               textFontSize="40px"
             />
           </Box>
-          <Box sx={{ margin: { xs: "10px 0", md: "100px 0" } }}>
-            <Grid container spacing={2}>
-              {cardArray.map((item, i) => (
-                <Grid xs={12} sm={6} lg={4} item key={i}>
-                  <Box sx={{ padding: { xs: "10px", md: "10px 0px 5px" } }}>
-                    <CustomCard
-                      title={item.title}
-                      description={item.desc}
-                      cardBg="transparent"
-                      height="220px"
-                    />
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
+          <Box
+            sx={{ display: "flex", justifyContent: "center", gap: 4, mt: 5 }}
+          >
+            <CustomButton label="Donate Now" />
+            <CustomButton label="Become A volunteer" />
           </Box>
         </Box>
       </Container>

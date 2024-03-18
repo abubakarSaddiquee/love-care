@@ -13,6 +13,7 @@ import FacebookIcon from "@/assets/socialIcon/Fb icon.png";
 import LinkedInIcon from "@/assets/socialIcon/Linked in.png";
 import InstagramIcon from "@/assets/socialIcon/Insta.png";
 import Twitter from "@/assets/socialIcon/twitter.png";
+import CustomTitle from "@/components/cutom-title";
 
 const footerData = [
   { links: [{ label: "Careers", url: "/careers" }] },
@@ -56,7 +57,7 @@ const Footer = () => {
   return (
     <footer>
       <JoinUs
-        text="Legal Help Squad creates new pathways for lawyers and their practices"
+        text="Feed Those Hungry Mouths, Put Clothes on Those Skinny Bones."
         onClick={() => {}}
       />
 
@@ -68,7 +69,13 @@ const Footer = () => {
               marginBottom: { xs: "3rem", sm: "3rem", md: "0px" },
             }}
           >
-            <Image src={Logo} alt="logo" />
+            <CustomTitle
+              primaryText="Kids"
+              secondaryText="deserve"
+              tertiaryText="better"
+              textFontSize="23.216px"
+              textFontWeight="500"
+            />
             <Box
               sx={{
                 color: "#fff",
@@ -79,7 +86,7 @@ const Footer = () => {
                 marginBottom: "1rem",
               }}
             >
-              A digital solution to meet lawyers requirements <br />
+              A digital solution to meet Charity requirements <br />
               through one single platform
             </Box>
           </Box>
@@ -111,21 +118,7 @@ const Footer = () => {
               gap: "30px",
               marginY: "2rem",
             }}
-          >
-            {footerData.map((column: any, index: any) => (
-              <Box key={index} sx={styles.customLinks}>
-                {column.links.map((link: any, linkIndex: any) => (
-                  <Link
-                    key={linkIndex}
-                    href={link.url}
-                    style={styles.customLink}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </Box>
-            ))}
-          </Box>
+          ></Box>
 
           <Box
             sx={{
@@ -136,22 +129,10 @@ const Footer = () => {
               gap: "20px",
               marginBottom: "2rem",
             }}
-          >
-            {footerItems.map((item, i) => {
-              return (
-                <Box key={i}>
-                  {item.label}
-                  {item.diveder && (
-                    <span style={{ marginLeft: "1rem" }}>|</span>
-                  )}
-                </Box>
-              );
-            })}
-          </Box>
+          ></Box>
 
           <Box sx={styles.footerTitle}>
-            Copyright ©2023 Legal Help Squad All rights reserved Protoric
-            Limited
+            Copyright ©2024 Kids Deserve Better All rights
           </Box>
         </Grid>
         <Grid item xs={12} sm={12} md={2} lg={3}>
@@ -171,7 +152,7 @@ const Footer = () => {
               >
                 Email:&nbsp;
               </span>
-              Info@Legalhelpsquad.co.uk
+              Info@kidsdeservebetter.com
             </Box>
 
             <Box sx={{ fontSize: "14px", fontWeight: "400" }}>
@@ -184,8 +165,7 @@ const Footer = () => {
               >
                 Address:&nbsp;
               </span>
-              Unit 8, Northgate Industrial Park, Collier Row Road,
-              <br /> Romford, England, RM5 2BG
+              kohat university of Seince and technology Hangu KPK Pakistan
             </Box>
           </Box>
         </Grid>

@@ -7,7 +7,7 @@ const JoinUs = (props: any) => {
   return (
     <Box sx={styles.joinUs}>
       <Box sx={styles.joinUsText}>{text}</Box>
-      
+
       <Button sx={styles.JoinUsbtn}>
         <Link
           style={{
@@ -19,7 +19,7 @@ const JoinUs = (props: any) => {
           }}
           href="/sign-in"
         >
-          Join Now
+          Donate Now
         </Link>
       </Button>
     </Box>

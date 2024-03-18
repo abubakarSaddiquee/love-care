@@ -4,12 +4,14 @@ import lawyerImage from "../../assets/home/lawyersJoin.png";
 import CustomTitle from "@/components/cutom-title";
 
 const buttonArray = [
-  { label: "Varied Opportunities" },
-  { label: "Access to Clients" },
-  { label: "Flexibility" },
-  { label: "Efficient Workflow" },
-  { label: "Freelance Lawyers" },
+  { label: "Impactful Mission" },
+  { label: "Transparency" },
+  { label: "Proven Results" },
+  { label: "Long-Term Vision" },
+  { label: "Community Involvement" },
   { label: "Reviews & Reputation" },
+  { label: "Personal Connection" },
+  { label: "Flexibility in Giving" },
 ];
 
 const LawyersJoin = () => {
@@ -18,7 +20,7 @@ const LawyersJoin = () => {
       <Box sx={{ padding: { xs: "10px", md: "10px" } }}>
         <CustomTitle
           primaryText="WHY"
-          secondaryText="DO LAWYERS"
+          secondaryText="DO Donars"
           tertiaryText="JOIN"
           strokeColor="#18323A"
           strokeWidth="4px"

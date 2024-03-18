@@ -20,7 +20,6 @@ import VisibileIcon from "@/assets/auth/eye.png";
 import VisibilityOffIcon from "@/assets/auth/nonvassibale.png";
 import Image from "next/image";
 import Link from "next/link";
-import axios from "axios";
 import { useRouter } from "next/navigation";
 
 type FormValues = {

@@ -8,7 +8,8 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import LeftSideImg from "../../../assets/leftSide.png";
+// import LeftSideImg from "../../../assets/leftSide.png";
+import LeftSideImg from "../../../image/leftSide.jpg";
 import Logo from "@/assets/mainLogo.png";
 import Image from "next/image";
 import GlobalButton from "@/components/button/button";
@@ -47,40 +48,24 @@ const LeftSide = () => {
     <Box sx={styles.leftMain}>
       <Box
         sx={{ paddingTop: "6rem", paddingBottom: "6rem", textAlign: "center" }}
-      >
-        <Image src={Logo} alt="Logo" width={280} height={128} />
-      </Box>
+      ></Box>
 
       <Box>
         <Typography sx={styles.welcome}>WELCOME TO</Typography>
         {/* <Typography sx={styles.title}>LEGAL HELP SQUAD</Typography> */}
         <CustomTitle
-          primaryText="LEGAL"
-          secondaryText="HELP"
-          tertiaryText="SQUAD"
+          primaryText="Kids"
+          secondaryText="deserve"
+          tertiaryText="better"
           textFontSize="54.216px"
           textFontWeight="700"
         />
-        <Typography sx={disc}>A Legal Freelancer Marketplace</Typography>
+        <Typography sx={disc}>Donate for Needy Chidrens</Typography>
       </Box>
-      <Typography sx={styles.register}>Register As</Typography>
-      <Box sx={{ textAlign: "center" }}>
-        <Grid container spacing={2}>
-          {buttonData.map((item: any, i) => (
-            <Grid
-              sx={{ padding: "20px" }}
-              key={i}
-              item
-              xs={12}
-              sm={4}
-              md={4}
-              lg={4}
-            >
-              <GlobalButton onClick={item.onClick}>{item.name}</GlobalButton>
-            </Grid>
-          ))}
-        </Grid>
-      </Box>
+
+      <Typography sx={disc}>
+        Feed Those Hungry Mouths, Put Clothes on Those Skinny Bones.
+      </Typography>
     </Box>
   );
 };

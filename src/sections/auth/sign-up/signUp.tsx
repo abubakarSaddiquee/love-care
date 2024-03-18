@@ -63,7 +63,6 @@ const SignUp = () => {
     resolver: yupResolver<any>(ValidationSchema),
   });
 
-  const BusinessName = "Legal Help Squad";
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     router.push("/home");
@@ -231,28 +230,7 @@ const SignUp = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={12} md={12}>
-              <Box>
-                <label>Business Name</label>
-                <TextField
-                  sx={styles.textField}
-                  InputProps={{
-                    style: {
-                      color: "#fff",
-                    },
-                  }}
-                  placeholder="Enter business name here"
-                  variant="outlined"
-                  fullWidth
-                  {...register("business_name")}
-                  value={BusinessName}
-                  error={Boolean(errors.business_name)}
-                />
-                <Box sx={styles.validationText}>
-                  {errors.business_name && errors.business_name.message}
-                </Box>
-              </Box>
-            </Grid>
+
             <Grid item xs={12} sm={12} md={12}>
               <FormControlLabel
                 control={

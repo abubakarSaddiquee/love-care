@@ -5,22 +5,16 @@ import React from "react";
 
 const cardArray = [
   {
-    title: "HIGH GROWTH TIME",
-    desc: `Expand incrementally as your practice grows
-without the risk of having to fill a new
-associate's plate`,
+    title: "Education Equality",
+    desc: `Empowering Children Through Education`,
   },
   {
-    title: <span>ONE-TIME/SPECIAL <br/> ROJECTS</span>,
-    desc: `Find the perfect candidate with the right
-experience in a specific area of law or
-jurisdiction`,
+    title: <span>Healthcare Access</span>,
+    desc: `Ensuring Healthy Futures for Needy Kids`,
   },
   {
-    title: "LAW FIRM RECRUITMENT",
-    desc: `Working with project lawyers can be a great
-way to find future full-time associates for your
-law practice`,
+    title: "Safe Environments",
+    desc: `Providing Secure Spaces for Children in Need`,
   },
   {
     title: "PEAK/SEASONAL NEEDS",
@@ -28,13 +22,16 @@ law practice`,
 that has never existed in the profession`,
   },
   {
-    title: <span>OUT OF TOWN OR ON <br/>VACATION</span>,
-    desc: `Have someone take over as much or as little of your practice as you need`,
+    title: <span>Empowering Girls</span>,
+    desc: `Supporting Gender Equality from Childhood`,
   },
   {
-    title: "OF COUNSEL",
-    desc: `Online, on-demand support when you need
-help picking up slack in your office or practice`,
+    title: "Sports and Recreation",
+    desc: `Promoting Active Lifestyles for Kids in Need`,
+  },
+  {
+    title: "Mental Health Support",
+    desc: `Nurturing Emotional Well-being in Vulnerable Children`,
   },
 ];
 
@@ -44,9 +41,9 @@ const PostProject = () => {
       <Box sx={{ padding: "20px 0" }}>
         <Box>
           <CustomTitle
-            primaryText="REASON TO"
-            secondaryText="POST A"
-            tertiaryText="PROJECT"
+            primaryText="Our Causes"
+            secondaryText="&"
+            tertiaryText="Help Us"
             textFontSize="40px"
           />
           <Typography
@@ -58,13 +55,15 @@ const PostProject = () => {
               padding: { xs: "20px 0", md: "30px 20px" },
             }}
           >
-            Legal Help Squad redefines the traditional legal service approach.
-            As a freelancing platform, we understand that legal assistance spans
-            a wide spectrum. We empower you to quickly find qualified experts
-            who precisely match your practice&#39;s needs. Our online platform
-            provides a seamless channel for collaboration and engagement with
-            legal professionals, offering unmatched staffing flexibility that
-            stands out in the industry.
+            At Kids Deserve Better, we believe in the potential of every child,
+            regardless of their circumstances. Our mission is to provide a
+            brighter future for needy children through initiatives that focus on
+            education, healthcare, nutrition, and creating safe environments. We
+            strive to empower young minds, ensuring they have equal
+            opportunities to thrive and succeed. With your support, we can make
+            a tangible difference in the lives of these deserving children,
+            offering them the chance to fulfill their dreams and reach their
+            full potential.
           </Typography>
         </Box>
         <Grid container spacing={2}>

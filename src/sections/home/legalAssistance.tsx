@@ -1,5 +1,6 @@
 import React from "react";
-import legalAssistanceImage from "../../assets/home/legalAssistance.png";
+// import legalAssistanceImage from "../../assets/home/legalAssistance.png";
+import legalAssistanceImage from "../../image/donation1.jpg";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import CustomHeading from "@/components/custom-heading";
 
@@ -7,9 +8,9 @@ const buttonArray = [
   {
     label: (
       <span>
-        Debt Collection
+        $60M
         <br />
-        Solutions
+        FUND RAISED
       </span>
     ),
     border: "1px solid #fff",
@@ -19,7 +20,7 @@ const buttonArray = [
   {
     label: (
       <span>
-        Immigration <br /> Matters
+        9,200 <br /> COMPLETED PROJECTS
       </span>
     ),
     border: "1px solid #FEDE4B",
@@ -29,9 +30,9 @@ const buttonArray = [
   {
     label: (
       <span>
-        Freedom of Information
+        5,800
         <br />
-        Requests
+        DONATION
       </span>
     ),
     border: "1px solid #fff",
@@ -41,50 +42,8 @@ const buttonArray = [
   {
     label: (
       <span>
-        Bankruptcy
-        <br /> Assistance
-      </span>
-    ),
-    border: "1px solid #FEDE4B",
-    color: "#18323A",
-    bgColor: "#FEDE4B",
-  },
-  {
-    label: (
-      <span>
-        Corporate <br /> Law
-      </span>
-    ),
-    border: "1px solid #fff",
-    color: "#fff",
-    bgColor: "transparent",
-  },
-  {
-    label: (
-      <span>
-        Personal Injury <br />
-        Law
-      </span>
-    ),
-    border: "1px solid #FEDE4B",
-    color: "#18323A",
-    bgColor: "#FEDE4B",
-  },
-  {
-    label: (
-      <span>
-        Real Estate <br /> Law
-      </span>
-    ),
-    border: "1px solid #fff",
-    color: "#fff",
-    bgColor: "transparent",
-  },
-  {
-    label: (
-      <span>
-        Family <br />
-        Law
+        2,750
+        <br /> VOLUNTEER
       </span>
     ),
     border: "1px solid #FEDE4B",
@@ -100,19 +59,17 @@ const LegalAssistance = () => {
         <Box sx={{ padding: { xs: "20px", md: "100px 0px" } }}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={12} lg={6}>
-              <CustomHeading label="What types of legal assistance have you been seeking?" />
               <Typography
                 sx={{
-                  fontWeight: 500,
-                  fontSize: "16px",
+                  fontWeight: 600,
+                  fontSize: "18px",
                   lineHeight: "24px",
                   padding: "50px 0",
                 }}
               >
-                Unlike traditional legal recruiters, Legal Help Squad empowers
-                you to post any legal project you need assistance with,
-                regardless of its nature.
+                GREAT REVIEWS FOR OUR SERVICES
               </Typography>
+              <CustomHeading label="Technical Statistics" />
             </Grid>
           </Grid>
           <Grid container spacing={2}>

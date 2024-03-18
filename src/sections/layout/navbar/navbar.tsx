@@ -16,36 +16,37 @@ import blackLogo from "../../../assets/blackLogo.png";
 import Image from "next/image";
 import { usePathname, useRouter, redirect } from "next/navigation";
 import axios from "axios";
+import CustomTitle from "@/components/cutom-title";
 
 const navItems = [
   {
     name: "HOME",
-    link: "/",
+    link: "/home",
   },
   {
-    name: "PRODUCTS",
-    link: "/production",
+    name: "ABOUT",
+    link: "/about",
   },
   {
-    name: "CAREERS",
+    name: "DONATE NOW",
     link: "/careers",
   },
   {
-    name: "WHY US",
+    name: "CONTACTUS",
     link: "/why-us",
   },
   {
-    name: "POST WORK",
+    name: "OUR TEAM",
     link: "/post-work",
   },
-  {
-    name: "PLANS",
-    link: "/plans",
-  },
-  {
-    name: "FIND CONSULTANT",
-    link: "/find-consultant",
-  },
+  // {
+  //   name: "PLANS",
+  //   link: "/plans",
+  // },
+  // {
+  //   name: "FIND CONSULTANT",
+  //   link: "/find-consultant",
+  // },
 ];
 
 const Navbar = () => {
@@ -103,7 +104,13 @@ const Navbar = () => {
     <Box sx={styles.navbarMain}>
       <Box sx={isTab ? styles.isTabNav : styles.navbar} position="static">
         <Box onClick={handleClick} sx={{ cursor: "pointer" }}>
-          <Image src={logoImage} alt="logo" />
+          <CustomTitle
+            primaryText="Kids"
+            secondaryText="deserve"
+            tertiaryText="better"
+            textFontSize="23.216px"
+            textFontWeight="500"
+          />
         </Box>
 
         {isMobile ? (
@@ -218,9 +225,9 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    p: "12px 48px",
-    paddingLeft: "4rem",
-    paddingRight: "6rem",
+    p: "12px 28px",
+    paddingLeft: "5rem",
+    paddingRight: "4rem",
     background: "transparent",
   },
 
